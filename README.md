@@ -61,7 +61,23 @@ python runner.py - generate_report - open_report
 
 python runner.py - run - generate_report - open_report
 
-python runner.py - run --matcher=test_demo - generate_report - open_report
+python runner.py - run --keyword=test_demo
+
+python runner.py - run --mark=P0
+
+python runner.py - run --keyword=test_demo --mark=P0
+
+python runner.py - run --case_files=tests\feature_a\test_android_demo.py
+
+python runner.py - run --last_failed=True
+
+python runner.py - run --concurrency=2
+
+python runner.py - run --maxfail=2
+
+python runner.py - run --failed_first
+
+python runner.py - run --ignore=tests\feature_a\test_android_demo.py
 ```
 
 ## 10. If you got errors like below, then you may need to restart your PC.
