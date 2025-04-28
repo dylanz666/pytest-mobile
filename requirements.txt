@@ -8,3 +8,4 @@ fire==0.7.0
 pytest-xdist==3.6.1
 pydantic~=2.9.2
 Appium-Python-Client==4.4.0
+loguru==0.7.3
