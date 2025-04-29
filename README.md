@@ -86,6 +86,8 @@ python runner.py - run --maxfail=2
 python runner.py - run --failed_first=True
 
 python runner.py - run --ignore=tests\feature_a\test_android_demo.py
+
+python runner.py - run --keyword=test_demo --mark=P0 - generate_report - open_report
 ```
 
 ## 10. If you got errors like below, then you may need to restart your PC.
