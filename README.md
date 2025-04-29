@@ -56,7 +56,13 @@ appium
 npm install -g allure
 ```
 
-## 10. Run your automation script, like:
+## 10. Install git commit hook.
+
+```commandline
+pre-commit install
+```
+
+## 11. Run your automation script, like:
 
 ```commandline
 python runner.py - run
