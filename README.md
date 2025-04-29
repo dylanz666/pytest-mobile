@@ -96,7 +96,7 @@ python runner.py - run --ignore=tests\feature_a\test_android_demo.py
 python runner.py - run --keyword=test_demo --mark=P0 - generate_report - open_report
 ```
 
-## 10. If you got errors like below, then you may need to restart your PC.
+## 12. If you got errors like below, then you may need to restart your PC.
 
 ```commandline
 UnknownError: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported.
