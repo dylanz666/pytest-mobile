@@ -9,10 +9,11 @@ class JSONPathUtil:
         """初始化 JSONPathReader，加载 JSON 数据"""
         if isinstance(json_data, str):
             self.data: Dict[str, Any] = self.load_json(json_data)
-        elif isinstance(json_data, dict):
+            return
+        if isinstance(json_data, dict):
             self.data: Dict[str, Any] = json_data
-        else:
-            raise ValueError("json_data must be a JSON string or a dictionary.")
+            return
+        raise ValueError("json_data must be a JSON string or a dictionary.")
 
     @staticmethod
     def load_json(json_data: str) -> Dict[str, Any]:
