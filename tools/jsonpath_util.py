@@ -22,11 +22,10 @@ class JSONPathUtil:
         except json.JSONDecodeError as e:
             raise ValueError("Invalid JSON data") from e
 
-    @classmethod
-    def save_json(cls, json_data, file_path):
+    def save_json(self, file_path):
         """保存 JSON 数据到指定文件"""
         with open(file_path, 'w') as file:
-            json.dump(json_data, file, indent=2)
+            json.dump(self.data, file, indent=2)
             file.close()
 
     def get_value(self, jsonpath_expr: str) -> Optional[List[Any]]:
